@@ -1,5 +1,5 @@
 import React from "react";
-import Smallblock from "./smallBlock";
+import Smallblock from "./SmallBlock";
 
 function BigCard({ item }) {
   return (

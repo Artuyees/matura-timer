@@ -1,4 +1,4 @@
-import Clock from "./clock";
+import Clock from "./Clock.js";
 import Footer from "./Footer";
 
 function App() {

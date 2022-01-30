@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import BigCard from "./bigCard";
-import Card from "./card";
+import BigCard from "./BigCard";
+import Card from "./Card";
 
 function Clock() {
   const [year] = useState(new Date().getFullYear());
