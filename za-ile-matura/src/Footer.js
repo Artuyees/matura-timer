@@ -2,7 +2,7 @@ import React from "react";
 
 function footer() {
   return (
-    <div className="absolute bottom-0 left-auto">
+    <div className="mt-auto">
       <a href="https://github.com/Artuyees">Artur Kucinski | 2022</a>
     </div>
   );

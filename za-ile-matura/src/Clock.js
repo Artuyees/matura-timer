@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BigCard from "./BigCard";
 import Card from "./Card";
+import Footer from "./Footer";
 
 function Clock() {
   const [year] = useState(new Date().getFullYear());
@@ -37,7 +38,7 @@ function Clock() {
     return () => clearTimeout(timer);
   });
   const element = (
-    <div className="flex flex-col gap-4 text-center mt-8">
+    <div className="flex flex-col gap-4 text-center m-2">
       <h1 className="text-4xl">Do matury {year} pozostalo: </h1>
       <BigCard item={timeLeft} />
       <h1 className="text-4xl">Lub:</h1>
@@ -46,6 +47,7 @@ function Clock() {
         <Card item={timeLeft.minutesFull} text="minut" />
         <Card item={timeLeft.secondsFull} text="sekund" />
       </div>
+      <Footer classname="pos" />
     </div>
   );
   return element;
