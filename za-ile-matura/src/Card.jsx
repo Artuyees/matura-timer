@@ -1,5 +1,5 @@
 import React from "react";
-import Smallblock from "./SmallBlock";
+import Smallblock from "./SmallBlock.jsx";
 
 function Card({ item, text }) {
   return (

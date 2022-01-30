@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import BigCard from "./BigCard";
-import Card from "./Card";
-import Footer from "./Footer";
+import BigCard from "./BigCard.jsx";
+import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 function Clock() {
   const [year] = useState(new Date().getFullYear());

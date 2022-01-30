@@ -1,4 +1,4 @@
-import Clock from "./Clock.js";
+import Clock from "./Clock.jsx";
 
 function App() {
   return (
