@@ -4,7 +4,7 @@ import Card from "./Card.jsx";
 import Footer from "./Footer.jsx";
 
 function Clock() {
-  const [year] = useState(new Date().getFullYear());
+  const year = new Date().getFullYear();
   const calcTimeLeft = () => {
     let year = new Date().getFullYear();
     let diff = +new Date(`05/04/${year}`) - +new Date();
