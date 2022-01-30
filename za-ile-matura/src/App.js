@@ -1,5 +1,11 @@
+import Clock from "./Clock";
+
 function App() {
-  return <h1>Works</h1>;
+  return (
+    <div>
+      <Clock />
+    </div>
+  );
 }
 
 export default App;
