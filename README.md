@@ -5,6 +5,6 @@ https://matura-timer.vercel.app/
 
 Simple react project.
 
-Website that shows how long time is left till final exam.
+A website that shows how much time is left till the final exam.
 Made with react and Tailwind CSS.
 
