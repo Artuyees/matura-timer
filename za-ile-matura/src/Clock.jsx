@@ -4,11 +4,10 @@ import Card from "./Card.jsx";
 import Footer from "./Footer.jsx";
 
 function Clock() {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear() + 1;
   const calcTimeLeft = () => {
-    let year = new Date().getFullYear();
-    let diff = +new Date(`05/04/${year}`) - +new Date();
-
+    let diff = new Date(`05/04/${year}`) - new Date();
+    console.log(diff);
     let timeLeft = {};
 
     if (diff > 0) {
@@ -22,8 +21,6 @@ function Clock() {
         minutesFull: Math.floor(diff / (1000 * 60)),
         secondsFull: Math.floor(diff / 1000),
       };
-    } else {
-      year += 1;
     }
 
     return timeLeft;
