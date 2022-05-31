@@ -24,11 +24,11 @@ function Clock() {
 
     return timeLeft;
   };
-  const [timeLeft, setTimeLeft] = useState(calcTimeLeft);
+  const [timeLeft, setTimeLeft] = useState(calcTimeLeft());
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calcTimeLeft);
+      setTimeLeft(calcTimeLeft());
     }, 1000);
 
     return () => clearTimeout(timer);
